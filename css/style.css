@@ -1,0 +1,48 @@
+/*=== RESET CSS ============*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a, li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+/*=== VARIABLES ================================*/
+:root{
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0D0D0D;
+}
+
+/*=== BASE ===============================*/
+ body{
+   font: 400 1rem 'Montserrat', sans-serif;
+   color: var(--text-color);
+   background: var(--body-background);
+   -webkit-font-smoothing: antialiased;
+   width: 100vw;
+   height: 100vh;
+ }
+
+ h1{
+   font: 700 1.875rem 'Montserrat', sans-serif;
+   color: var(--text-color);
+   -webkit-font-smoothing: auto;
+ }
+
+ /*=== LAYOUT =============================*/
+
+
+
+ /*=== HOME ===============================*/
