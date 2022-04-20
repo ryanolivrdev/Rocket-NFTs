@@ -2,18 +2,22 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-a, li{
-  text-decoration: none;
+li{
   list-style-type: none;
 }
 
-img{
+a{
+  text-decoration: none;
+ }
+
+/*img{
   width: 100%;
   height: auto;
 }
-
+*/
 /*=== VARIABLES ================================*/
 :root{
   --body-background: #0e0e0e;
@@ -31,8 +35,9 @@ img{
    color: var(--text-color);
    background: var(--body-background);
    -webkit-font-smoothing: antialiased;
-   width: 100vw;
-   height: 100vh;
+   background-image: url(../assets/background.png);
+   background-repeat: no-repeat;
+   background-size: 100vw 100vh;
  }
 
  h1{
@@ -41,8 +46,61 @@ img{
    -webkit-font-smoothing: auto;
  }
 
+ .menu > a{
+  font: 400 1rem 'Montserrat', sans-serif;
+  color: var(--text-color);
+  gap: 3.75rem;
+ }
+
+ .nav-btn > a{
+  font: 700 1.125rem 'Montserrat', sans-serif;
+  color: var( --black-text);
+
+
+ }
+
  /*=== LAYOUT =============================*/
+.container{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
 
+#header {
+  display: flex;
+  margin-left: 5.125rem;
+  margin-right: 5.125rem;
+  margin-top: 3.563rem;
+  margin-bottom: 5.625rem;
+}
 
+nav{
+  height: 3.125rem;
+  width:  100%;
+  display: flex;
+  align-items:center;
+  text-align: center;
+  justify-content: space-between;
+}
 
+.menu{
+  display: flex;
+  justify-content:space-between;
+  gap: 3.75rem;
+}
+
+.nav-btn{
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
  /*=== HOME ===============================*/
+
+.home-top{
+  display: flex;
+}
