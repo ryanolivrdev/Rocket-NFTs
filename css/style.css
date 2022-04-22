@@ -78,6 +78,20 @@ a{
  color: var(--color-logo);
 }
 
+.about-right > h2 > span {
+  font: 600 3.125rem 'Montserrat', sans-serif;
+  line-height: 3.813rem;
+  color: var(--text-color);
+  -webkit-font-smoothing: auto;
+}
+
+.about-right > h2 {
+  font: 600 1.25rem 'Montserrat', sans-serif;
+  line-height: 1.5rem;
+  color: var(--subtitle-color);
+  -webkit-font-smoothing: auto;
+}
+
  /*=== LAYOUT =============================*/
 #header {
   display: flex;
@@ -87,8 +101,8 @@ a{
 }
 
 nav{
-  width: 67%;
   display: flex;
+  width: 90%;
   align-items:center;
   justify-content: space-between;
 }
@@ -107,6 +121,10 @@ nav{
   align-items: center;
   border-radius: 5px;
   border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
  /*=== HOME ===============================*/
@@ -120,7 +138,7 @@ nav{
 
 .home-top{
   display: flex;
-  width: 71%;
+  width: 100%;
   justify-content: space-around;
   align-items: center
 }
@@ -158,5 +176,52 @@ nav{
 }
 
 .gallery1 > img, .gallery2 > img{
+  width: 25rem;
   border: 1px solid #FFFFFF;
 }
+
+ /*=== ABOUT ===============================*/
+.about-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--body-background);
+}
+
+ .about-right{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 505px;
+  text-align: center;
+  justify-content: space-between;
+ }
+
+ .about-left{
+  display: flex;
+  width: 80%;
+  height: 355px;
+  flex-direction: column;
+  justify-content: flex-end;
+  
+ }
+
+ .comments{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ .comments1, .comments2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 388px;
+  height: 214px;
+ }
+
+ .background > img {
+   width: 1544px;
+ }
+
+
